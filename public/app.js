@@ -1,8 +1,10 @@
 function something()
 {
-	var x = window.localStorage.getItem('qwerty');
+	var x = window.localStorage.getItem('aaa');
 
-	window.localStorage.setItem('qwerty', 93493);
+	x = x * 1 + 1;
+
+	window.localStorage.setItem('aaa', x);
 
 	alert(x);
 }
