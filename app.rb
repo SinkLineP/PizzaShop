@@ -10,8 +10,8 @@ require 'sqlite3'
 set :database, {adapter: "sqlite3", database: "pizzashop.db"}
 
 class Products < ActiveRecord::Base
-
 end
+
 
 get '/' do
 	erb :index
