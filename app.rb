@@ -14,6 +14,7 @@ end
 
 
 get '/' do
+	@products = Products.order('created_at DESC')
 	erb :index
 end
 

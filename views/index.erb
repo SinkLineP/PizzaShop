@@ -1,16 +1,31 @@
 <h2>Welcome to Pizza Shop!</h2>
-<button class="btn btn-primary btn-large" onclick="something()">Click me!</button>
+<p></p>
 
 
+<div class="container">
   <div class="row">
-    <div class="col-xs-4">
-     <span >hello</span>
+  	
+  	
+  	<% @products.each do |pizza| %>
+    
+
+<div class=" col-xs-3 tabl">
+
+	<img height="150px" width="auto" src="<%= pizza.path_to_photo %>">
+     <h1><%= pizza.title %></h1>
+     <hr>
+     <p><%= pizza.description %></p>
+     <h2>Price: <%= pizza.price %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-success btn-large" onclick="something()">Buy pizza.</button></h2>
+
+     
     </div>
-    <div class="col-xs-4">
-      One of three columns
-    </div>
-    <div class="col-xs-4">
-      One of three columns
-    </div>
+    
+    <%end%>
+
+
   </div>
+</div>
+
+
+
 
