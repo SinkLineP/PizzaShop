@@ -6,24 +6,10 @@ function something()
 	alert(x);
 }
 
+
 function add_to_cart(id)
 {
-	alert('You addet pizza with id:' + id);
+	var x = window.localStorage.getItem('product_' + id);
+	x = x * 1 + 1;
+	window.localStorage.setItem('product_' + id, x);
 }
-
-
-
-
-
-
-
-
-
-
-// function add_to_cart(id)
-// {
-// 	var x = window.localStorage.getItem('product_' + 'id')
-// 	x = x * 1 + 1
-// 	window.localStorage.setItem('product_' + 'id', x)
-//  alert(x)
-// }
