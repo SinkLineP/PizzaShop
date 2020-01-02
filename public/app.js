@@ -14,3 +14,5 @@ function add_to_cart(id)
 	x = x * 1 + 1;
 	window.localStorage.setItem(key, x);
 }
+
+
