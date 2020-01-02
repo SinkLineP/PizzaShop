@@ -3,25 +3,19 @@
 
 
 <div class="container">
-  <div class="row">
-  	
-  	
-  	<% @products.each do |pizza| %>
-    
-
-<div class=" col-xs-3 tabl">
-
-	<img height="150px" width="auto" src="<%= pizza.path_to_photo %>">
-     <h1><%= pizza.title %></h1>
-     <hr>
-     <p><%= pizza.description %></p>
-     <h3>Price: <%= pizza.price %>grn.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-     	<button class="btn btn-success btn-large" onclick="something()">Buy pizza.</button>
-     </h3>     
-    </div>
-    <%end%>
-   
-  </div>
+ 	<div class="row">
+	  	<% @products.each do |pizza| %>
+			<div class=" col-xs-3 tabl">
+				<img height="150px" width="auto" src="<%= pizza.path_to_photo %>">
+	     		<h1><%= pizza.title %></h1>
+	     		<hr>
+	     		<p><%= pizza.description %></p>
+	     		<h3>Price: <%= pizza.price %>grn.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	     			<button class="btn btn-success btn-large" onclick="something()">Buy pizza</button>
+	     		</h3>     
+		    </div>
+	    <%end%>
+  	</div>
 </div>
 
 
