@@ -17,6 +17,26 @@ function add_to_cart(id)
 
 	var localValue = localStorage.getItem(x);
 	console.log(localValue);
+
+	alert('Item in cart: ' + number_product_cart());
+	
 }
 
 
+
+function number_product_cart()
+{
+	var cnt = 0;
+
+	for (var i = 0; i < window.localStorage.length; i++)
+	{
+		var key = window.localStorage.key(i); //получаем ключ 
+		var value = window.localStorage.getItem(key); //получаем значение
+
+		if(key.indexOf('product_') == 0)	
+		{
+			cnt = cnt + value * 1;
+		}
+	}
+	return cnt;
+}
