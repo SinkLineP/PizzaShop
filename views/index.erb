@@ -11,7 +11,7 @@
 	     		<hr>
 	     		<p><%= pizza.description %></p>
 	     		<h3>Price: <%= pizza.price %>grn.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	     			<button style="margin: 10px 0px 0px 0px; background:#0F9B00;" class="btn btn-success btn-large" onclick="add_to_cart(<%= pizza.id %>)">Buy pizza</button>
+	     			<button style="margin: 10px 0px 0px 0px; background:#0F9B00;" class="btn btn-success btn-large" onclick="add_to_cart(<%= pizza.id %>)">Купить</button>
 	     		</h3>     
 		    </div>
 	    <%end%>
@@ -19,5 +19,9 @@
 </div>
 
 
-
+<script type="text/javascript">
+	$(function () {
+		update_orders_input();
+	});
+</script>
 
