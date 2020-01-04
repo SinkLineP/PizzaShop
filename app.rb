@@ -20,5 +20,4 @@ end
 
 get '/about' do
 	erb :about
-	@cart = 123
 end
