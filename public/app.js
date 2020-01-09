@@ -25,6 +25,11 @@ function update_orders_input()
 	$('#orders_input').val(orders);
 }
 
+function update_orders_button()
+{
+	var text = '🛒 (' + number_product_cart() + ' шт.)';
+	$('#orders_button').val(text);
+}
 
 function number_product_cart()
 {

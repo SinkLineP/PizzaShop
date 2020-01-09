@@ -8,7 +8,6 @@
 			<div class="col-xs-3 tabl">
 				<img height="150px" width="auto" src="<%= pizza.path_to_photo %>">
 	     		<h1><%= pizza.title %></h1>
-	     		<hr>
 	     		<p><%= pizza.description %></p>
 	     		<h3>Price: <%= pizza.price %>grn.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	     			<button style="margin: 10px 0px 0px 0px; background:#0F9B00;" class="btn btn-success btn-large" onclick="add_to_cart(<%= pizza.id %>)">Купить</button>
@@ -19,9 +18,16 @@
 </div>
 
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 	$(function () {
 		update_orders_input();
+		update_orders_button();
 	});
 </script>
-
+ -->
+  <script>
+    $(function() {
+      update_orders_input();
+      update_orders_button();
+    });
+  </script>
