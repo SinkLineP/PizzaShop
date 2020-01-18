@@ -78,14 +78,14 @@ post '/delete_order' do
 end
 
 
+not_found do
+  status 404
+  erb :not_found
+end
 
 
+get '/order' do
 
-
-
-
-
-
-
-
+	erb :orders
+end
 

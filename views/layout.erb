@@ -38,10 +38,13 @@
 			      <li><a href="/contacts">Contacts</a></li>
 			    </ul>
 			    <ul class="nav navbar-nav navbar-right">
+			    	<li class="order"><a href="/order">Orders</a></li>
+			    	<li>
 			    	<form action="/cart" method="post">
 			    	<input id="orders_input" style="margin: 10px 0px 0px 0px;" name="orders" type="hidden" />
 			    	<input id="orders_button" style="/*background:#304BFF; color:white;*/ margin: 7px 25px 10px 0px;" type="submit" class="btn btn-small button7" value="🛒&nbsp;(<%= @total_qty %>)" /> <!-- margin: 0px(сверху) 25px(справа) 0px(снизу) 0px(слева) -->
 			    	</form>
+			    	</li>
 			    </ul>
 			  </div><!--/.nav-collapse -->
 			</nav>
