@@ -85,6 +85,7 @@ end
 
 
 get '/order' do
+	@zakaz = Order.all
 
 	erb :orders
 end
