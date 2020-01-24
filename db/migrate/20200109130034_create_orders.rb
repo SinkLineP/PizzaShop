@@ -4,8 +4,6 @@ class CreateOrders < ActiveRecord::Migration[5.2]
     
     	t.text :name
     	t.text :phone
-    	t.text :country
-    	t.text :town
     	t.text :adress
     	t.text :orders_input
 
