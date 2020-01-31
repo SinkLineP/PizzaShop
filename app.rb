@@ -85,7 +85,7 @@ end
 
 
 get '/order' do
-	@zakaz = Order.all
+	@zakaz = Order.all('created_at DESC')
 
 	erb :orders
 end
